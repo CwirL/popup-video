@@ -1,0 +1,420 @@
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.red {
+  color: red;
+}
+
+/* Video */
+.video-container {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+}
+video {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+.send-front {
+  z-index: 2;
+}
+
+/* Pop up */
+
+.modal {
+  display: block;
+  position: absolute;
+  top: -500vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 520px;
+  width: 800px;
+  background-color: white;
+  z-index: 101;
+}
+.popup {
+  animation-name: popup;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+.popover {
+  animation-name: popover;
+  animation-duration: 0.5s;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes popup {
+  0% {
+    top: -500vh;
+  }
+  100% {
+    top: 10vh;
+  }
+}
+@keyframes popover {
+  0% {
+    top: 10vh;
+  }
+  100% {
+    top: -500vh;
+  }
+}
+
+.close {
+  float: right;
+  margin: 5px 10px 0 0;
+  width: 5px;
+  height: 20px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  background-color: black;
+}
+.close::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(90deg);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  padding: 20px;
+}
+/* popup-1 */
+.popup-1 {
+  background: white url("../assets/images/pop_bg.png");
+  background-size: cover;
+  padding-top: 120px;
+}
+.row {
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+.first {
+  display: flex;
+  width: 40%;
+  height: 274px;
+}
+.second {
+  font-family: Heebo;
+  width: 50%;
+  height: 274px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  display: block;
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 10px;
+  width: 98%;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.btn:active {
+  border: none;
+  text-decoration: none;
+}
+.btn-blue {
+  color: white;
+  font-size: 20px;
+  background-color: #3273dc;
+}
+.btn-blue:hover {
+  background-color: #2064d1;
+}
+.p1-m-cls{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.btn-white {
+  font-size: 24px;
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.btn-white:hover {
+  border: 1px solid rgba(0, 0, 0);
+}
+
+.img-pop {
+  position: absolute;
+}
+.woman {
+  animation-name: man-woman;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.man {
+  animation-name: man-woman;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes man-woman {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Poup 1 movil*/
+.popup-1-movil {
+  width: 100%;
+  height: auto;
+}
+
+/* popup 2*/
+.popup-2 {
+  background-color: transparent;
+}
+.r-4 {
+  width: 38%;
+  margin: 2%;
+}
+.r-6 {
+  width: 58%;
+  margin: 2%;
+}
+.wait {
+  display: inline-block;
+  color: white;
+  font-size: 80px;
+  font-weight: bolder;
+  text-shadow: -2px 5px #000000;
+  font-family: "Work Sans", sans-serif;
+  transform: rotate(-20deg);
+}
+.p2-par {
+  margin-top: 30px;
+  font-size: 26px;
+  border-radius: 5px;
+  padding: 15px 30px;
+  text-align: center;
+  background: white;
+}
+.p2-foot {
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+}
+.p2-cls-desk{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.p2-cls-desk:active{
+  border: none;
+  outline: none;
+}
+.p2-cls {
+  float: right;
+  font-size: 20px;
+}
+.ahorre {
+  text-align: center;
+  color: yellow;
+  font-size: 60px;
+}
+.cupon {
+  text-align: center;
+  color: white;
+}
+.tickets {
+  position: relative;
+}
+.discountTicket {
+  position: absolute;
+  width: 25%;
+}
+.ticket1 {
+  left: 5%;
+  right: 0;
+  padding-top: 20px;
+  transform: rotate(-30deg);
+}
+.ticket2 {
+  left: 20%;
+  right: 0;
+  padding-top: 10px;
+  transform: rotate(-15deg);
+}
+
+.ticket3 {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ticket4 {
+  right: 20%;
+  padding-top: 10px;
+  transform: rotate(15deg);
+}
+.ticket5 {
+  right: 5%;
+  padding-top: 20px;
+  transform: rotate(30deg);
+}
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.35);
+  z-index: 200;
+}
+.quedan {
+  position: absolute;
+  bottom: 40px;
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: -2px 5px #000000;
+}
+/* popup 2 movil */
+.btn-green {
+  font-size: 20px;
+  background-color: green;
+  color: white;
+}
+.popup-2-movil {
+  width: 100%;
+  height: auto;
+}
+.p2-m-cls{
+  cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+  border: none;
+}
+.btn2-green {
+  background-color: rgb(47, 255, 57);
+  border-radius: 10px;
+  font-size: 2vw;
+  margin-top: 32%;
+  width: 70%;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+.btn2-green:hover {
+  color: black;
+  transition: color 1s;
+}
+.btn2-green:active{
+  border: none;
+  text-decoration: none;
+}
+.opac {
+  opacity: 0 !important;
+}
+@media (max-width: 900px) {
+  .video-container {
+    width: 90%;
+  }
+  .popup-1-movil {
+    width: 100%;
+  }
+  .btn2-green {
+    margin-top: 58%;
+    font-size: 4vw;
+  }
+}
+
+.descarga {
+  display: block;
+  margin: 50px auto 20px auto;
+  width: 40%;
+}
+.obten {
+  color: #C00;
+  text-align: center;
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: bolder;
+}
+.title2 {
+  font-size: 24px;
+  border-bottom-style: solid;
+  border-bottom-color: #00098A;
+  border-bottom-width: 2px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.leer{
+  color: blue;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.footer-p {
+  margin-top: 20px;
+  font-size: 10px;
+}
+.card:hover{
+  transform: scale(1.01);
+  transition: transform 1s;
+}
+.mobile-para{
+  font-size: 20px;
+  margin: 10px 4% 10px 4%;
+}

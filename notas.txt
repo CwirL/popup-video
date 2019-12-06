@@ -1,0 +1,3 @@
+Para que el video se reprodusca automaticamente en mozilla firefox es necesario 
+hacer una configuracion en el navegador para que permita esta acción. Si no es posible
+sera necesario hacer click en el video 3 veces.
